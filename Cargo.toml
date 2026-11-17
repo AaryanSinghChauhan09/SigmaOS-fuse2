@@ -3,7 +3,7 @@ name = "sigmaos_fuse2"
 version = "0.1.0"
 edition = "2021"
 license = "MIT"
-description = "SigmaOS fuse2 component inspired by Linux Mint / Omarchy / Arch Linux."
+description = "Userspace virtual filesystem namespace and mount table for SigmaOS."
 
 [dependencies]
 

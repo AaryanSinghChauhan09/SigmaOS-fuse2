@@ -3,14 +3,14 @@ name = "SigmaOS-fuse2"
 tier = 2
 stability = "beta"
 language = "rust"
-description = "SigmaOS SigmaOS-fuse2 component"
+description = "Userspace virtual filesystem namespace and mount table"
 upstream = []
 
 [contract]
-provides = ["component"]
+provides = ["vfs", "mount-table"]
 depends_on = []
 
 [maturity]
 status = "Implemented"
-test_evidence = "Compiles and passes AAA unit tests"
-next_milestone = "Hardware and runtime integration"
+test_evidence = "cargo test --offline unit tests pass"
+next_milestone = "Kernel FUSE protocol bridge and permission enforcement"
